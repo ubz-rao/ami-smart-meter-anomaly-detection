@@ -55,6 +55,7 @@ This model works by isolating rare patterns in high-dimensional data and is comm
 
 This repository contains a modular implementation of an AMI-based smart meter anomaly detection system.
 
+```text
 ami-smart-meter-anomaly-detection/
 │
 ├── main.py                      # Entry point of the project
