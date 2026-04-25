@@ -53,14 +53,17 @@ This model works by isolating rare patterns in high-dimensional data and is comm
 
 ## Project Structure
 
+This repository contains a modular implementation of an AMI-based smart meter anomaly detection system.
+
 ami-smart-meter-anomaly-detection/
-├── main.py
-├── data_loader.py
-├── feature_engineering.py
-├── model.py
-├── visualization.py
-├── requirements.txt
-└── README.md
+│
+├── main.py                      # Entry point of the project
+├── data_loader.py              # Data ingestion and loading utilities
+├── feature_engineering.py      # Feature creation from raw meter data
+├── model.py                    # Isolation Forest model training and prediction
+├── visualization.py            # Plotting and result visualization
+├── requirements.txt            # Dependencies
+└── README.md                   # Project documentation
 
 ---
 
@@ -96,5 +99,5 @@ python main.py
 
 ## Author
 
-Usama Bin Zaheer  
-AMI Engineer | Data and AI Enthusiast
+U. B. Zaheer  
+AMI Systems Lead | Data and AI Enthusiast
