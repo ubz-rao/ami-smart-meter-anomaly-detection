@@ -81,11 +81,23 @@ python main.py
 
 ---
 
-## Output
+## Dataset
+
+A sample dataset is provided in the `data/` folder:
+
+- `sample_meter_data.csv` contains synthetic smart meter readings in hourly format.
+
+## Outputs
+
+The model generates following outputs showing:
 
 - Time-series consumption visualization
-- Detected anomalies highlighted on the graph
+- Detected anomalies highlighted in red on the graph
 - Summary of anomaly count
+
+Example output is saved in:
+
+- `images/anomaly_plot.png`
 
 ---
 

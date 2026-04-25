@@ -11,7 +11,7 @@ def load_data(csv_path=None, n_points=1000):
     # REAL DATA MODE (CSV)
     if csv_path:
         df = pd.read_csv(csv_path)
-
+        
         df.columns = [c.lower().strip() for c in df.columns]
 
         # detect columns
@@ -48,3 +48,4 @@ def load_data(csv_path=None, n_points=1000):
         "timestamp": timestamp,
         "consumption": consumption
     })
+
