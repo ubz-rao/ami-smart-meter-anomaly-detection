@@ -1,68 +1,100 @@
-\# Smart Meter Anomaly Detection (AMI Project)
+# Smart Meter Anomaly Detection (AMI Analytics Project)
 
+## Overview
 
+This project demonstrates an anomaly detection system for Smart Meter data used in Advanced Metering Infrastructure (AMI) environments.
 
-\## Overview
+The goal is to identify unusual electricity consumption patterns that may indicate:
+- Energy theft or non-technical losses
+- Meter malfunction
+- Abnormal load behavior
+- Data inconsistencies in smart grid systems
 
-This project simulates and analyzes Smart Meter data for anomaly detection in AMI systems.
+---
 
+## Industry Context
 
+In AMI systems, utilities collect high-frequency energy consumption data from smart meters. This data is used for monitoring grid health, detecting losses, and ensuring system reliability.
 
-It supports:
+This project simulates a simplified version of an AMI analytics pipeline similar to those used in utility data platforms and meter data management systems.
 
-\- Real CSV smart meter data
+---
 
-\- Synthetic AMI simulation
+## Approach
 
-\- Machine learning-based anomaly detection
+The system uses unsupervised machine learning since labeled anomaly data is typically not available in real-world utility datasets.
 
+Model used:
+- Isolation Forest (scikit-learn)
 
+This model works by isolating rare patterns in high-dimensional data and is commonly used for anomaly detection problems.
 
-\---
+---
 
+## Pipeline
 
+1. Data loading (synthetic or CSV-based smart meter data)
+2. Feature engineering (time-based and statistical features)
+3. Model training using Isolation Forest
+4. Anomaly detection scoring
+5. Visualization of results
 
-\## Use Cases in Utilities
+---
 
-\- Energy theft detection
+## Features Used
 
-\- Meter failure detection
+- Electricity consumption (kWh)
+- Hour of day
+- Day of week
+- Rolling mean (24-hour window)
+- Rolling standard deviation
 
-\- Outage identification
+---
 
-\- Load behavior monitoring
+## Project Structure
 
+ami-smart-meter-anomaly-detection/
+├── main.py
+├── data_loader.py
+├── feature_engineering.py
+├── model.py
+├── visualization.py
+├── requirements.txt
+└── README.md
 
+---
 
-\---
+## How to Run
 
-
-
-\## Tech Stack
-
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- scikit-learn
-
-\- Matplotlib
-
-
-
-\---
-
-
-
-\## How to Run
-
-
-
-```bash
+Install dependencies:
 
 pip install -r requirements.txt
 
+Run the project:
+
 python main.py
 
+---
+
+## Output
+
+- Time-series consumption visualization
+- Detected anomalies highlighted on the graph
+- Summary of anomaly count
+
+---
+
+## Future Enhancements
+
+- Real-time streaming integration (Kafka or MQTT simulation)
+- REST API deployment using FastAPI
+- Dashboard for monitoring anomalies
+- Integration with weather and tariff data
+- Advanced deep learning models for temporal patterns
+
+---
+
+## Author
+
+Usama Bin Zaheer  
+AMI Engineer | Data and AI Enthusiast
