@@ -87,6 +87,8 @@ A sample dataset is provided in the `data/` folder:
 
 - `sample_meter_data.csv` contains synthetic smart meter readings in hourly format.
 
+---
+
 ## Outputs
 
 The model generates following outputs showing:
