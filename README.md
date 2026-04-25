@@ -65,6 +65,7 @@ ami-smart-meter-anomaly-detection/
 ├── visualization.py            # Plotting and result visualization
 ├── requirements.txt            # Dependencies
 └── README.md                   # Project documentation
+```
 
 ---
 
